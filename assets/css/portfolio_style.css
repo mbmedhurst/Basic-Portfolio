@@ -2,7 +2,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
     color: #777777;
-    overflow: hidden;
+    overflow: hidden
 }
 
 a {
@@ -45,13 +45,15 @@ a {
     border-top-style: solid;
     border-top-color: cornflowerblue;
     background-image: url(../images/white-waves.png);
+    overflow: hidden;
 }
 
-#aboutme {
-    display: inline-block;
+#portfolio {
+    display: flex;
     flex-direction: column;
+    flex: 1;
     background-color: white;
-    padding: 20px;
+    padding: 25px;
     border-style: double;
     border-color: cornflowerblue;
     margin-top: 50px;
@@ -61,13 +63,12 @@ a {
     text-align: justify;
 }
 
-#about-me-header {
+#portfolio-header {
     color: cornflowerblue;
 }
 
-img {
-    float: left;
-    padding-right: 15px;
+hr {
+    width: 100%
 }
 
 .footer {
@@ -82,4 +83,5 @@ img {
     border-top-style: solid;
     border-top-color: cornflowerblue;
     border-top-width: 5px;
+    overflow: hidden;
 }

@@ -47,11 +47,12 @@ a {
     background-image: url(../images/white-waves.png);
 }
 
-#aboutme {
-    display: inline-block;
+#contact {
+    display: flex;
     flex-direction: column;
+    flex: 1;
     background-color: white;
-    padding: 20px;
+    padding: 25px;
     border-style: double;
     border-color: cornflowerblue;
     margin-top: 50px;
@@ -61,13 +62,12 @@ a {
     text-align: justify;
 }
 
-#about-me-header {
+#contact-header {
     color: cornflowerblue;
 }
 
-img {
-    float: left;
-    padding-right: 15px;
+hr {
+    width: 100%;
 }
 
 .footer {
