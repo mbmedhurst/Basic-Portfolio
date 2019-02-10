@@ -4,10 +4,13 @@ body {
     color: #777777;
     overflow: hidden;
 }
-
 a {
     text-decoration: none;
     color: #777777
+}
+
+.justified-text {
+    text-align: justify;
 }
 
 .grid-container {
@@ -18,26 +21,23 @@ a {
     margin-right: 200px;
     background-color: white;
 }
-
 .grid-item1 {
     background-color: cornflowerblue;
     color: white;
     padding: 5px;
     text-align: center;
 }
-
 .grid-item4, .grid-item5 {
     text-align: center;
     border-right-style: inset;
     padding: 30px;
 }
-
 .grid-item6 {
     text-align: center;
     padding: 30px;
 }
 
-#mainbody {
+.mainbody {
     position: absolute;
     top: 100px;
     bottom: 0;
@@ -47,28 +47,53 @@ a {
     background-image: url(../images/white-waves.png);
 }
 
-#aboutme {
-    display: inline-block;
+.main-section {
+    display: flex;
     flex-direction: column;
+    flex: 1;
     background-color: white;
-    padding: 20px;
+    padding: 25px;
     border-style: double;
     border-color: cornflowerblue;
     margin-top: 50px;
     margin-left: 200px;
     margin-right: 200px;
     font-size: 16px;
-    text-align: justify;
+}
+.main-section-header {
+    color: cornflowerblue;
 }
 
-#about-me-header {
-    color: cornflowerblue;
+hr {
+    width: 100%
 }
 
 img {
     float: left;
     padding-right: 15px;
 }
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    display: block;
+    border: 1px solid lightgrey;
+    height: 150px;
+    width: 100%;
+  }
+
+  button {
+    background-color: cornflowerblue;
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 8px 15px;
+ }
 
 .footer {
     position: fixed;
