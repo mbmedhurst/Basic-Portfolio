@@ -47,6 +47,20 @@ a {
     background-image: url(../images/white-waves.png);
 }
 
+#am-main-section {
+    display: inline-block;
+    flex-direction: column;
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-style: double;
+    border-color: cornflowerblue;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 16px;
+}
+
 .main-section {
     display: flex;
     flex-direction: column;
@@ -66,11 +80,32 @@ a {
 
 hr {
     width: 100%
+    }
+
+#with-patch {
+    float: left;
+    height: 200px;
+    width: 150px;
+    border: 1px solid cornflowerblue;
+    margin: 12px 15px 10px 0px;
 }
 
-img {
-    float: left;
-    padding-right: 15px;
+#portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-top: 10px;
+    grid-gap: 15px;
+    margin: 5px;
+}
+
+.cell {
+    height: 130px;
+    border: 1px dotted cornflowerblue;
+}
+
+form {
+    padding-top: 20px;
 }
 
 input[type=text] {
@@ -78,22 +113,23 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-  }
+}
 
-  textarea {
+textarea {
     display: block;
     border: 1px solid lightgrey;
     height: 150px;
     width: 100%;
-  }
+    margin: 8px 0px;
+}
 
-  button {
+button {
     background-color: cornflowerblue;
     color: white;
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 14px;
     padding: 8px 15px;
- }
+}
 
 .footer {
     position: fixed;
