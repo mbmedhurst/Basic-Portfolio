@@ -2,11 +2,23 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
     color: #777777;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
-a {
+a:link {
     text-decoration: none;
     color: #777777
+}
+
+a:visited {
+    color: lightgrey;
+}
+
+a:hover {
+    color: cornflowerblue;
+}
+
+a:active {
+    color: cornflowerblue;
 }
 
 .justified-text {
@@ -21,12 +33,16 @@ a {
     margin-right: 200px;
     background-color: white;
 }
+
 .grid-item1 {
+    grid-column: 1 / span 1;
+    width: max-content;
     background-color: cornflowerblue;
     color: white;
     padding: 5px;
     text-align: center;
 }
+
 .grid-item4, .grid-item5 {
     text-align: center;
     border-right-style: inset;
@@ -47,6 +63,7 @@ a {
     background-image: url(../images/white-waves.png);
 }
 
+/* Assigned a specific id to the about page main section so I could use inline-block so the image would not stretch across the whole box */
 #am-main-section {
     display: inline-block;
     flex-direction: column;
@@ -74,6 +91,7 @@ a {
     margin-right: 200px;
     font-size: 16px;
 }
+
 .main-section-header {
     color: cornflowerblue;
 }
@@ -96,12 +114,27 @@ hr {
     grid-template-rows: 1fr 1fr 1fr;
     padding-top: 10px;
     grid-gap: 15px;
-    margin: 5px;
 }
 
 .cell {
-    height: 130px;
+    display: block;
     border: 1px dotted cornflowerblue;
+    justify-content: center;
+    text-align: center;
+}
+
+.portfolio-image {
+    display: block;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h3 {
+    background-color: cornflowerblue; 
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    margin: 0px;
+    color: white;
 }
 
 form {
@@ -144,3 +177,4 @@ button {
     border-top-color: cornflowerblue;
     border-top-width: 5px;
 }
+

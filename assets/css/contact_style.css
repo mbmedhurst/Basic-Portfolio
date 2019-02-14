@@ -4,10 +4,13 @@ body {
     color: #777777;
     overflow: hidden;
 }
-
 a {
     text-decoration: none;
     color: #777777
+}
+
+.justified-text {
+    text-align: justify;
 }
 
 .grid-container {
@@ -25,19 +28,17 @@ a {
     padding: 5px;
     text-align: center;
 }
-
 .grid-item4, .grid-item5 {
     text-align: center;
     border-right-style: inset;
     padding: 30px;
 }
-
 .grid-item6 {
     text-align: center;
     padding: 30px;
 }
 
-#mainbody {
+.mainbody {
     position: absolute;
     top: 100px;
     bottom: 0;
@@ -47,7 +48,7 @@ a {
     background-image: url(../images/white-waves.png);
 }
 
-#contact {
+.main-section {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -59,15 +60,40 @@ a {
     margin-left: 200px;
     margin-right: 200px;
     font-size: 16px;
-    text-align: justify;
 }
-
-#contact-header {
+.main-section-header {
     color: cornflowerblue;
 }
 
 hr {
+    width: 100%
+    }
+
+form {
+    padding-top: 20px;
+}
+
+input[type=text] {
     width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    display: block;
+    border: 1px solid lightgrey;
+    height: 150px;
+    width: 100%;
+    margin: 8px 0px;
+}
+
+button {
+    background-color: cornflowerblue;
+    color: white;
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 8px 15px;
 }
 
 .footer {
