@@ -2,8 +2,10 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
     color: #777777;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
+
+/* I found that I had to first remove text decoration in order for the rest of the link styling to work */
 a:link {
     text-decoration: none;
     color: #777777
@@ -18,7 +20,7 @@ a:hover {
 }
 
 a:active {
-    color: cornflowerblue;
+    color: #F6C6BF;
 }
 
 .justified-text {
@@ -126,6 +128,7 @@ hr {
 .portfolio-image {
     display: block;
     object-fit: cover;
+    width: 100%;
     z-index: -1;
 }
 
@@ -164,6 +167,7 @@ button {
     padding: 8px 15px;
 }
 
+/* I can't figure out how to hide the horizontal overflow but still allow vertical scrolling */
 .footer {
     position: fixed;
     left: 0;
@@ -177,4 +181,3 @@ button {
     border-top-color: cornflowerblue;
     border-top-width: 5px;
 }
-
