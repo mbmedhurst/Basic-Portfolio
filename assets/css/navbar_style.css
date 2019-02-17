@@ -1,0 +1,41 @@
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+}
+
+
+.grid-container {
+    display: grid;
+/* I did this navbar before we learned about grids - I just googled it - so the grid-template-column style is not exactly the way we learned it */
+    grid-template-columns: max-content auto auto min-content min-content min-content;
+    padding: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: white;
+}
+
+.grid-item1 {
+    grid-column: 1 / span 1;
+    width: max-content;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+/* These two cells aren't visible on the page - I used them to put space in between my name and the menu items */
+.grid-item2, .grid-item3 {
+    padding-right: 100px;
+}
+
+.grid-item4, .grid-item5 {
+    text-align: center;
+    border-right-style: inset;
+    padding: 30px;
+}
+.grid-item6 {
+    text-align: center;
+    padding: 30px;
+}

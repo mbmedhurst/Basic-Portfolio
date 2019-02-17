@@ -1,8 +1,9 @@
 body {
+    margin: 0%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
     color: #777777;
-    overflow: hidden;
+    background-image: url(../images/white-waves.png);
 }
 
 /* I found that I had to first remove text decoration in order for the rest of the link styling to work */
@@ -27,34 +28,6 @@ a:active {
     text-align: justify;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: max-content auto auto min-content min-content min-content;
-    padding: 5px;
-    margin-left: 200px;
-    margin-right: 200px;
-    background-color: white;
-}
-
-.grid-item1 {
-    grid-column: 1 / span 1;
-    width: max-content;
-    background-color: cornflowerblue;
-    color: white;
-    padding: 5px;
-    text-align: center;
-}
-
-.grid-item4, .grid-item5 {
-    text-align: center;
-    border-right-style: inset;
-    padding: 30px;
-}
-.grid-item6 {
-    text-align: center;
-    padding: 30px;
-}
-
 .mainbody {
     position: absolute;
     top: 100px;
@@ -62,7 +35,8 @@ a:active {
     width: 100%; 
     border-top-style: solid;
     border-top-color: cornflowerblue;
-    background-image: url(../images/white-waves.png);
+    /* setting the bottom margin to such a high number is what allowed for vertical scrolling */
+    margin-bottom: 900px;
 }
 
 /* Assigned a specific id to the about page main section so I could use inline-block so the image would not stretch across the whole box */
@@ -167,8 +141,8 @@ button {
     padding: 8px 15px;
 }
 
-/* I can't figure out how to hide the horizontal overflow but still allow vertical scrolling */
 .footer {
+    margin-top: -50px;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -177,7 +151,5 @@ button {
     color: #c9c9c9;
     font-family: Arial, Helvetica, sans-serif;    
     text-align: center;
-    border-top-style: solid;
-    border-top-color: cornflowerblue;
-    border-top-width: 5px;
+    border-top: 5px solid cornflowerblue;
 }

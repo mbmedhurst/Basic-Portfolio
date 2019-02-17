@@ -7,24 +7,29 @@
     <title>Marianna Medhurst</title>
     <!-- I did not use the reset file b/c i had already written most of my css and the reset file totally messed it up -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- I had to use a separate stylesheet for the navbar in order to cover up the background image in that section -->
+    <link rel="stylesheet" href="./assets/css/navbar_style.css">
 </head>
 
 <body>
-    <div class="grid-container">
-        <div class="grid-item1">
-            <h1>Marianna Medhurst</h1>
+    <!-- I used a grid here but if I were starting over I'd try to employ the offset feature rather than padding to get my menu items to be on the right hand side -->
+    <div class="nav-container">
+        <div class="grid-container">
+            <div class="grid-item1">
+                <h1>Marianna Medhurst</h1>
+            </div>
+            <nav class="grid-item2"></nav>
+            <nav class="grid-item3"></nav>
+            <nav class="grid-item4">
+                <a href="./index.html">About</a>
+            </nav>
+            <nav class="grid-item5">
+                <a href="portfolio.html">Portfolio</a>
+            </nav>
+            <nav class="grid-item6">
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-        <nav class="grid-item2"></nav>
-        <nav class="grid-item3"></nav>
-        <nav class="grid-item4">
-            <a href="./index.html">About</a>
-        </nav>
-        <nav class="grid-item5">
-            <a href="portfolio.html">Portfolio</a>
-        </nav>
-        <nav class="grid-item6">
-            <a href="contact.html">Contact</a>
-        </nav>
     </div>
 
     <div class="mainbody">
@@ -32,11 +37,12 @@
             <h2 class="main-section-header">About Me</h2>
             <hr>
             <img id="with-patch" src="./assets/images/with_patch.jpg" alt="With Patch">
-            <!-- This isn't a great paragraph but I decided it was not worth spending a ton of time on right now -->
-            <p class="justified-text">I'm originally from Los Angeles but have spent the better part of my adult life moving from one place to another, including San Diego and the UK
+            <p class="justified-text">I'm originally from Los Angeles but have spent the better part of my adult life
+                moving from one place to another, including San Diego and the UK
                 (Oxford and London). I've been back in beautiful SoCal for about five years.</p>
             <p class="justified-text">I have a Masters degree in English Literature, which I loved studying in college.
-                But once I started working I went in a bit of a different direction. For the last 25 years I’ve worked with business systems
+                But once I started working I went in a bit of a different direction. For the last 25 years I’ve worked
+                with business systems
                 in various roles, including technical support, training, writing user guides, business analysis, user
                 acceptance and usability testing, and now - finally - as a developer.</p>
             <p class="justified-text">In my life away from my computer I enjoy traveling, cooking, watching Dodger
